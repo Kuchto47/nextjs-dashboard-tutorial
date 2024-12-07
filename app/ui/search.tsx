@@ -12,7 +12,6 @@ export function Search({ placeholder }: { placeholder: string }) {
   const { replace } = useRouter();
 
   const handleSearch = useDebouncedCallback((event: ChangeEvent<HTMLInputElement>) => {
-    console.log('TRIGGERING');
     const params = new URLSearchParams(searchParams)
     const searchTerm = event.target.value;
 
